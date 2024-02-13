@@ -8,21 +8,27 @@ cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 
-# model
-model = YOLO("yolo-Weights/yolov8n.pt")
+# Model
+# model = YOLO("yolo-Weights/yolov8n.pt")
+
+# Test with an self-trained face model based on YOLOV8, using face detection dataset
+model = YOLO("model/best.pt")
+
 
 # object classes
-classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
-              "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
-              "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
-              "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
-              "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
-              "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
-              "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
-              "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
-              "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
-              "teddy bear", "hair drier", "toothbrush"
-              ]
+# classNames = ["person", "bicycle", "car", "motorbike", "aeroplane", "bus", "train", "truck", "boat",
+#               "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat",
+#               "dog", "horse", "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella",
+#               "handbag", "tie", "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat",
+#               "baseball glove", "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup",
+#               "fork", "knife", "spoon", "bowl", "banana", "apple", "sandwich", "orange", "broccoli",
+#               "carrot", "hot dog", "pizza", "donut", "cake", "chair", "sofa", "pottedplant", "bed",
+#               "diningtable", "toilet", "tvmonitor", "laptop", "mouse", "remote", "keyboard", "cell phone",
+#               "microwave", "oven", "toaster", "sink", "refrigerator", "book", "clock", "vase", "scissors",
+#               "teddy bear", "hair drier", "toothbrush"
+#               ]
+
+classNames = ["face"]
 
 # Counter for unique filenames
 person_counter = 1
@@ -63,7 +69,7 @@ while True:
             # Check if the detected object is a "person"
             save_directory = "imgs/"
 
-            if classNames[cls] == "person":
+            if classNames[cls] == "face":
                 # Crop the person from the image
                 cropped_person = img[y1:y2, x1:x2]
 
@@ -79,7 +85,9 @@ while True:
     if cv2.waitKey(1) == ord('q'):
         break
     
-    time.sleep(5)  # Introduce a delay of 1 second
+    time.sleep(1)  # Introduce a delay of 1 second
 
 cap.release()
 cv2.destroyAllWindows()
+
+# Source code has been adapted from https://dipankarmedh1.medium.com/real-time-object-detection-with-yolo-and-webcam-enhancing-your-computer-vision-skills-861b97c78993
