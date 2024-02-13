@@ -2,6 +2,7 @@
 datasets/
 runs/
 yolov8n.pt
+imgs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
