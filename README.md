@@ -1,4 +1,5 @@
 # fd_widerface_yolov8
 Training for educational purposes
 
-<video src='[your URL here](https://github.com/sivakornchong/fd_widerface_yolov8/blob/main/prototype.mp4)https://github.com/sivakornchong/fd_widerface_yolov8/blob/main/prototype.mp4' width=180/>
+
+![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/assets/104509481/38451ed4-b0bc-42ae-b804-aac92683b6e9)
