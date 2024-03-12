@@ -15,8 +15,7 @@ Disclaimer: This is a model training demonstration for educational purposes only
 ### Algorithm and Training Data
 #### Face Detection Model:
 - YOLOV8 base architecture
-- Finetuned based on WiderFace dataset:
-Link: http://shuoyang1213.me/WIDERFACE/
+- Finetuned based on publicly available WiderFace dataset
 - Eventual MAP(50) on test dataset is: 64% just after 20 epochs. 
 - Below is a sample of testing results
 
@@ -24,8 +23,7 @@ Link: http://shuoyang1213.me/WIDERFACE/
 
 #### Age Classification Model:
 - RESNET34 base architecture
-- Finetuned based on UTKFace dataset. The dataset is crtopped using the engine from face detection model. 
-Link: https://susanqq.github.io/UTKFace/
+- Finetuned based on publicly available UTKFace dataset. The dataset is crtopped using the engine from face detection model. 
 - Model is trained up to epoch 4, which is selected to prevent overfitting on training data
 - Weighted average accuracy is 74% on the test dataset.
 - Below is an example of training dataset. 
@@ -43,7 +41,12 @@ Link: https://susanqq.github.io/UTKFace/
 
 ### Potential Improvement
 - Improve variability within the dataset used for training both models.
-  - For classification model specifically, data preprocessing could be done to rotate the faces around and 
-  improve the accuracy upon deploymnent.
+  - For classification model specifically, data preprocessing could be done to rotate the faces around and improve the accuracy upon deployment.
   - Train with more epochs for detection model.
-- Model quantization to reduce model sizes for deployment on smaller devices (phones). 
+- Model quantization to reduce model sizes for deployment on smaller devices (phones).
+
+### References
+- YOLOV8: https://github.com/ultralytics/ultralytics
+- RESNET34: https://pytorch.org/vision/main/models/generated/torchvision.models.resnet34.html#torchvision.models.resnet34
+- UTKface dataset: https://susanqq.github.io/UTKFace/
+- WiderFace dataset: http://shuoyang1213.me/WIDERFACE/ 
