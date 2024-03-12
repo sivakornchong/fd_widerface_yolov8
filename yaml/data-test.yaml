@@ -1,0 +1,12 @@
+names:
+- face
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: wider-face-ndtcz
+  url: https://universe.roboflow.com/large-benchmark-datasets/wider-face-ndtcz/dataset/1
+  version: 1
+  workspace: large-benchmark-datasets
+
+train: ../../WIDER-FACE-1/train/images
+val: ../../WIDER-FACE-1/test/images

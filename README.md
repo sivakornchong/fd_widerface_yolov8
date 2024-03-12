@@ -17,7 +17,10 @@ Disclaimer: This is a model training demonstration for educational purposes only
 - YOLOV8 base architecture
 - Finetuned based on WiderFace dataset:
 Link: http://shuoyang1213.me/WIDERFACE/
-- Eventual MAP on test dataset is:
+- Eventual MAP(50) on test dataset is: 64% just after 20 epochs. 
+- Below is a sample of testing results
+
+![sample_results](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/val_detection.png)
 
 #### Age Classification Model:
 - RESNET34 base architecture
@@ -25,6 +28,7 @@ Link: http://shuoyang1213.me/WIDERFACE/
 Link: https://susanqq.github.io/UTKFace/
 - Model is trained up to epoch 4, which is selected to prevent overfitting on training data
 - Weighted average accuracy is 74% on the test dataset.
+- Below is an example of training dataset. 
 
 ![training_data](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/training_img_cls.png)
 
@@ -39,5 +43,7 @@ Link: https://susanqq.github.io/UTKFace/
 
 ### Potential Improvement
 - Improve variability within the dataset used for training both models.
-  - For classification model specifically, data preprocessing could be done to rotate the faces around and improve the accuracy upon deploymnent.
+  - For classification model specifically, data preprocessing could be done to rotate the faces around and 
+  improve the accuracy upon deploymnent.
+  - Train with more epochs for detection model.
 - Model quantization to reduce model sizes for deployment on smaller devices (phones). 
