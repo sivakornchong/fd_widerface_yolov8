@@ -1,4 +1,4 @@
-# fd_widerface_yolov8
+# Face Detection and Age Classification Demonstration
 
 ### Purpose
 In this scenario, we assume there is an application from health promotion board that would propose different health exercises to different age groups. Hence, a face detection and an age classification algorithm would be very helpful for determining the user's age.
