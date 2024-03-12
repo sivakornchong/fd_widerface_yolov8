@@ -46,6 +46,7 @@ Disclaimer: This is a model training demonstration for educational purposes only
   - For classification model specifically, data preprocessing could be done to rotate the faces around and improve the accuracy upon deployment.
   - Train with more epochs for detection model.
 - Model quantization to reduce model sizes for deployment on smaller devices (phones).
+- Data for application (webcam images) could slightly be different from the faces from internet used for classification model training. It would be good to expand the training dataset into the actual application sets. 
 
 ### References
 - YOLOV8: https://github.com/ultralytics/ultralytics
