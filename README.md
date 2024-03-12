@@ -32,6 +32,7 @@ Link: https://susanqq.github.io/UTKFace/
   - The classification model is used for each cropped image.
   - The results are then demonstrated on screen.
 - Demo
+  
 ![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/assets/104509481/38451ed4-b0bc-42ae-b804-aac92683b6e9)
 
 ### Potential Improvement
