@@ -20,7 +20,7 @@ Link: http://shuoyang1213.me/WIDERFACE/
 - Eventual MAP(50) on test dataset is: 64% just after 20 epochs. 
 - Below is a sample of testing results
 
-![sample_results](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/val_detection.png)
+![sample_results](https://github.com/sivakornchong/fd_widerface_yolov8/blob/main/doc_img/val_detection.png)
 
 #### Age Classification Model:
 - RESNET34 base architecture
@@ -30,7 +30,7 @@ Link: https://susanqq.github.io/UTKFace/
 - Weighted average accuracy is 74% on the test dataset.
 - Below is an example of training dataset. 
 
-![training_data](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/training_img_cls.png)
+![training_data](https://github.com/sivakornchong/fd_widerface_yolov8/blob/main/doc_img/training_img_cls.png)
 
 ### Deployment
 - A simple .py script is developed to deploy both models in a sample demo.
@@ -39,7 +39,7 @@ Link: https://susanqq.github.io/UTKFace/
   - The results are then demonstrated on screen.
 - Demo
   
-![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/demo_gif.gif)
+![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/blob/main/doc_img/demo_gif.gif)
 
 ### Potential Improvement
 - Improve variability within the dataset used for training both models.
