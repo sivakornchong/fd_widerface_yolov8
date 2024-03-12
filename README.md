@@ -26,6 +26,8 @@ Link: https://susanqq.github.io/UTKFace/
 - Model is trained up to epoch 4, which is selected to prevent overfitting on training data
 - Weighted average accuracy is 74% on the test dataset.
 
+![training_data](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/training_img_cls.png)
+
 ### Deployment
 - A simple .py script is developed to deploy both models in a sample demo.
   - The face detection model is used to detect a face. That face is cropped as an image for further processing. 
@@ -33,7 +35,7 @@ Link: https://susanqq.github.io/UTKFace/
   - The results are then demonstrated on screen.
 - Demo
   
-![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/assets/104509481/38451ed4-b0bc-42ae-b804-aac92683b6e9)
+![demo_gif](https://github.com/sivakornchong/fd_widerface_yolov8/tree/main/doc_img/demo_gif.gif)
 
 ### Potential Improvement
 - Improve variability within the dataset used for training both models.
